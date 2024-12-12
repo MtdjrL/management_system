@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="EUI">
+      <UniqueIdentifier>{325df83c-cdb8-4d10-b911-101076aa2028}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EUI\BasicWidget.cpp">
+      <Filter>EUI</Filter>
+    </ClCompile>
+    <ClCompile Include="EUI\Button.cpp">
+      <Filter>EUI</Filter>
+    </ClCompile>
+    <ClCompile Include="EUI\IconButton.cpp">
+      <Filter>EUI</Filter>
+    </ClCompile>
+    <ClCompile Include="EUI\Input.cpp">
+      <Filter>EUI</Filter>
+    </ClCompile>
+    <ClCompile Include="EUI\Message.cpp">
+      <Filter>EUI</Filter>
+    </ClCompile>
+    <ClCompile Include="EUI\Navbar.cpp">
+      <Filter>EUI</Filter>
+    </ClCompile>
+    <ClCompile Include="EUI\NavButton.cpp">
+      <Filter>EUI</Filter>
+    </ClCompile>
+    <ClCompile Include="EUI\Table.cpp">
+      <Filter>EUI</Filter>
+    </ClCompile>
+    <ClCompile Include="EUI\TextButton.cpp">
+      <Filter>EUI</Filter>
+    </ClCompile>
+    <ClCompile Include="EUI\Toast.cpp">
+      <Filter>EUI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EUI\BasicWidget.h">
+      <Filter>EUI</Filter>
+    </ClInclude>
+    <ClInclude Include="EUI\Button.h">
+      <Filter>EUI</Filter>
+    </ClInclude>
+    <ClInclude Include="EUI\EUI.h">
+      <Filter>EUI</Filter>
+    </ClInclude>
+    <ClInclude Include="EUI\IconButton.h">
+      <Filter>EUI</Filter>
+    </ClInclude>
+    <ClInclude Include="EUI\Input.h">
+      <Filter>EUI</Filter>
+    </ClInclude>
+    <ClInclude Include="EUI\Message.h">
+      <Filter>EUI</Filter>
+    </ClInclude>
+    <ClInclude Include="EUI\Navbar.h">
+      <Filter>EUI</Filter>
+    </ClInclude>
+    <ClInclude Include="EUI\NavButton.h">
+      <Filter>EUI</Filter>
+    </ClInclude>
+    <ClInclude Include="EUI\Table.h">
+      <Filter>EUI</Filter>
+    </ClInclude>
+    <ClInclude Include="EUI\TextButton.h">
+      <Filter>EUI</Filter>
+    </ClInclude>
+    <ClInclude Include="EUI\Toast.h">
+      <Filter>EUI</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
