@@ -16,6 +16,21 @@
     <Filter Include="EUI">
       <UniqueIdentifier>{325df83c-cdb8-4d10-b911-101076aa2028}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Account">
+      <UniqueIdentifier>{58ad23e2-82e8-4d2e-aac0-0a9dd9059bbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Student">
+      <UniqueIdentifier>{88c7a5d9-7997-4150-ae2a-dab464f080c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Teacher">
+      <UniqueIdentifier>{1988da30-51be-4ae3-a5d7-1f1702c1a7e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{78b558c8-fe53-4bd7-9a35-0173e0fd84df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Widget">
+      <UniqueIdentifier>{383fd62c-790d-4e40-9c30-c8aa863de58d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -51,6 +66,18 @@
     <ClCompile Include="EUI\Toast.cpp">
       <Filter>EUI</Filter>
     </ClCompile>
+    <ClCompile Include="Common\common.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\font.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\icon.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Student\student.cpp">
+      <Filter>Student</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="EUI\BasicWidget.h">
@@ -85,6 +112,18 @@
     </ClInclude>
     <ClInclude Include="EUI\Toast.h">
       <Filter>EUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\font.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\icon.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Student\student.h">
+      <Filter>Student</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

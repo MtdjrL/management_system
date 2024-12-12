@@ -70,6 +70,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>E:\chengxushejijichu\management_system\EUI;E:\chengxushejijichu\management_system;$(IncludePath)</IncludePath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -127,6 +130,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Common\common.cpp" />
+    <ClCompile Include="Common\font.cpp" />
+    <ClCompile Include="Common\icon.cpp" />
     <ClCompile Include="EUI\BasicWidget.cpp" />
     <ClCompile Include="EUI\Button.cpp" />
     <ClCompile Include="EUI\IconButton.cpp" />
@@ -138,8 +144,12 @@
     <ClCompile Include="EUI\TextButton.cpp" />
     <ClCompile Include="EUI\Toast.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Student\student.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Common\common.h" />
+    <ClInclude Include="Common\font.h" />
+    <ClInclude Include="Common\icon.h" />
     <ClInclude Include="EUI\BasicWidget.h" />
     <ClInclude Include="EUI\Button.h" />
     <ClInclude Include="EUI\EUI.h" />
@@ -151,6 +161,7 @@
     <ClInclude Include="EUI\Table.h" />
     <ClInclude Include="EUI\TextButton.h" />
     <ClInclude Include="EUI\Toast.h" />
+    <ClInclude Include="Student\student.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
