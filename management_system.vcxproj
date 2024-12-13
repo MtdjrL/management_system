@@ -130,6 +130,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Account\account.cpp" />
     <ClCompile Include="Common\common.cpp" />
     <ClCompile Include="Common\font.cpp" />
     <ClCompile Include="Common\icon.cpp" />
@@ -145,8 +146,12 @@
     <ClCompile Include="EUI\Toast.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Student\student.cpp" />
+    <ClCompile Include="Widget\accountWidget.cpp" />
+    <ClCompile Include="Widget\stuWidget.cpp" />
+    <ClCompile Include="Widget\teacherWidget.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Account\account.h" />
     <ClInclude Include="Common\common.h" />
     <ClInclude Include="Common\font.h" />
     <ClInclude Include="Common\icon.h" />

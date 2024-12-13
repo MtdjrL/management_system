@@ -1,5 +1,6 @@
 #include "EUI/EUI.h" // 引入EUI组件库
 #include "Student/student.h"
+#include "Account/account.h"
 
 
 int main()
@@ -9,7 +10,10 @@ int main()
 	setbkcolor(RGB(255, 255, 255)); // 设置背景为白色
 	cleardevice();
 
-	stuMainInterface();
+	initData(); // 初始化数据
+	readFile(); // 读入数据
+
+	login(); // 登录
 
 	_getch();				// 按任意键继续
 	closegraph();			// 关闭绘图窗口

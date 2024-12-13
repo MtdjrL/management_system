@@ -78,6 +78,18 @@
     <ClCompile Include="Student\student.cpp">
       <Filter>Student</Filter>
     </ClCompile>
+    <ClCompile Include="Account\account.cpp">
+      <Filter>Account</Filter>
+    </ClCompile>
+    <ClCompile Include="Widget\accountWidget.cpp">
+      <Filter>Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Widget\stuWidget.cpp">
+      <Filter>Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Widget\teacherWidget.cpp">
+      <Filter>Widget</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="EUI\BasicWidget.h">
@@ -124,6 +136,9 @@
     </ClInclude>
     <ClInclude Include="Student\student.h">
       <Filter>Student</Filter>
+    </ClInclude>
+    <ClInclude Include="Account\account.h">
+      <Filter>Account</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

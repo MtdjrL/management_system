@@ -12,13 +12,13 @@ int toast_posy = 30;
 Toast toast(WIN_WIDTH, toast_posy, toast_width, toast_height);
 
 // 学生
-Student student[MAX_STU];
+Student stu[MAX_STU];
 
 // 老师
 Teacher teacher;
 
 
-int stu_num = 6; // 图书总数
+int stu_num = 6; // 学生总数
 
 
 int cur_stu_id = 0; // 当前学生id，因为是自增所以要记录
@@ -82,65 +82,65 @@ void initData()
 void initStuData()
 {
 	// 学生初始数据
-	student[0].id = ++cur_stu_id;
-	wcscpy_s(student[0].account, L"2024990901001@UESTG"); // 账号
-	wcscpy_s(student[0].password, L"901001"); // 账号
-	wcscpy_s(student[0].name, L"张三"); // 姓名
-	wcscpy_s(student[0].classs, L"2024990901"); // 班级
-	wcscpy_s(student[0].stu_id, L"2024990901001"); // 学号
-	wcscpy_s(student[0].calculus, L"98"); // 微积分
-	wcscpy_s(student[0].martix, L"100"); // 线性代数与空间解析几何
-	wcscpy_s(student[0].c_c, L"99"); // 程序设计基础
+	stu[0].id = ++cur_stu_id;
+	wcscpy_s(stu[0].account, L"2024990901001@UESTG"); // 账号
+	wcscpy_s(stu[0].password, L"901001"); // 账号
+	wcscpy_s(stu[0].name, L"张三"); // 姓名
+	wcscpy_s(stu[0].classs, L"2024990901"); // 班级
+	wcscpy_s(stu[0].stu_id, L"2024990901001"); // 学号
+	wcscpy_s(stu[0].calculus, L"98"); // 微积分
+	wcscpy_s(stu[0].martix, L"100"); // 线性代数与空间解析几何
+	wcscpy_s(stu[0].c_c, L"99"); // 程序设计基础
 
-	student[1].id = ++cur_stu_id;
-	wcscpy_s(student[1].account, L"2024990901002@UESTG"); // 账号
-	wcscpy_s(student[1].password, L"901002"); // 账号
-	wcscpy_s(student[1].name, L"李四"); // 姓名
-	wcscpy_s(student[1].classs, L"2024990901"); // 班级
-	wcscpy_s(student[1].stu_id, L"2024990901002"); // 学号
-	wcscpy_s(student[1].calculus, L"75"); // 微积分
-	wcscpy_s(student[1].martix, L"85"); // 线性代数与空间解析几何
-	wcscpy_s(student[1].c_c, L"100"); // 程序设计基础
+	stu[1].id = ++cur_stu_id;
+	wcscpy_s(stu[1].account, L"2024990901002@UESTG"); // 账号
+	wcscpy_s(stu[1].password, L"901002"); // 账号
+	wcscpy_s(stu[1].name, L"李四"); // 姓名
+	wcscpy_s(stu[1].classs, L"2024990901"); // 班级
+	wcscpy_s(stu[1].stu_id, L"2024990901002"); // 学号
+	wcscpy_s(stu[1].calculus, L"75"); // 微积分
+	wcscpy_s(stu[1].martix, L"85"); // 线性代数与空间解析几何
+	wcscpy_s(stu[1].c_c, L"100"); // 程序设计基础
 
-	student[2].id = ++cur_stu_id;
-	wcscpy_s(student[2].account, L"2024990902001@UESTG"); // 账号
-	wcscpy_s(student[2].password, L"902001"); // 账号
-	wcscpy_s(student[2].name, L"王二麻子"); // 姓名
-	wcscpy_s(student[2].classs, L"2024990902"); // 班级
-	wcscpy_s(student[2].stu_id, L"2024990902001"); // 学号
-	wcscpy_s(student[2].calculus, L"98"); // 微积分
-	wcscpy_s(student[2].martix, L"100"); // 线性代数与空间解析几何
-	wcscpy_s(student[2].c_c, L"99"); // 程序设计基础
+	stu[2].id = ++cur_stu_id;
+	wcscpy_s(stu[2].account, L"2024990902001@UESTG"); // 账号
+	wcscpy_s(stu[2].password, L"902001"); // 账号
+	wcscpy_s(stu[2].name, L"王二麻子"); // 姓名
+	wcscpy_s(stu[2].classs, L"2024990902"); // 班级
+	wcscpy_s(stu[2].stu_id, L"2024990902001"); // 学号
+	wcscpy_s(stu[2].calculus, L"98"); // 微积分
+	wcscpy_s(stu[2].martix, L"100"); // 线性代数与空间解析几何
+	wcscpy_s(stu[2].c_c, L"99"); // 程序设计基础
 
-	student[3].id = ++cur_stu_id;
-	wcscpy_s(student[3].account, L"2024990902002@UESTG"); // 账号
-	wcscpy_s(student[3].password, L"902002"); // 账号
-	wcscpy_s(student[3].name, L"杨畅畅"); // 姓名
-	wcscpy_s(student[3].classs, L"2024990902"); // 班级
-	wcscpy_s(student[3].stu_id, L"2024990902002"); // 学号
-	wcscpy_s(student[3].calculus, L"98"); // 微积分
-	wcscpy_s(student[3].martix, L"100"); // 线性代数与空间解析几何
-	wcscpy_s(student[3].c_c, L"99"); // 程序设计基础
+	stu[3].id = ++cur_stu_id;
+	wcscpy_s(stu[3].account, L"2024990902002@UESTG"); // 账号
+	wcscpy_s(stu[3].password, L"902002"); // 账号
+	wcscpy_s(stu[3].name, L"杨畅畅"); // 姓名
+	wcscpy_s(stu[3].classs, L"2024990902"); // 班级
+	wcscpy_s(stu[3].stu_id, L"2024990902002"); // 学号
+	wcscpy_s(stu[3].calculus, L"98"); // 微积分
+	wcscpy_s(stu[3].martix, L"100"); // 线性代数与空间解析几何
+	wcscpy_s(stu[3].c_c, L"99"); // 程序设计基础
 
-	student[4].id = ++cur_stu_id;
-	wcscpy_s(student[4].account, L"2024990903001@UESTG"); // 账号
-	wcscpy_s(student[4].password, L"903001"); // 账号
-	wcscpy_s(student[4].name, L"朱心心"); // 姓名
-	wcscpy_s(student[4].classs, L"2024990903"); // 班级
-	wcscpy_s(student[4].stu_id, L"2024990903001"); // 学号
-	wcscpy_s(student[4].calculus, L"75"); // 微积分
-	wcscpy_s(student[4].martix, L"75"); // 线性代数与空间解析几何
-	wcscpy_s(student[4].c_c, L"60"); // 程序设计基础
+	stu[4].id = ++cur_stu_id;
+	wcscpy_s(stu[4].account, L"2024990903001@UESTG"); // 账号
+	wcscpy_s(stu[4].password, L"903001"); // 账号
+	wcscpy_s(stu[4].name, L"朱心心"); // 姓名
+	wcscpy_s(stu[4].classs, L"2024990903"); // 班级
+	wcscpy_s(stu[4].stu_id, L"2024990903001"); // 学号
+	wcscpy_s(stu[4].calculus, L"75"); // 微积分
+	wcscpy_s(stu[4].martix, L"75"); // 线性代数与空间解析几何
+	wcscpy_s(stu[4].c_c, L"60"); // 程序设计基础
 
-	student[5].id = ++cur_stu_id;
-	wcscpy_s(student[5].account, L"2024990903002@UESTG"); // 账号
-	wcscpy_s(student[5].password, L"903002"); // 账号
-	wcscpy_s(student[5].name, L"吴昊昊"); // 姓名
-	wcscpy_s(student[5].classs, L"2024990903"); // 班级
-	wcscpy_s(student[5].stu_id, L"2024990903002"); // 学号
-	wcscpy_s(student[5].calculus, L"100"); // 微积分
-	wcscpy_s(student[5].martix, L"100"); // 线性代数与空间解析几何
-	wcscpy_s(student[5].c_c, L"100"); // 程序设计基础
+	stu[5].id = ++cur_stu_id;
+	wcscpy_s(stu[5].account, L"2024990903002@UESTG"); // 账号
+	wcscpy_s(stu[5].password, L"903002"); // 账号
+	wcscpy_s(stu[5].name, L"吴昊昊"); // 姓名
+	wcscpy_s(stu[5].classs, L"2024990903"); // 班级
+	wcscpy_s(stu[5].stu_id, L"2024990903002"); // 学号
+	wcscpy_s(stu[5].calculus, L"100"); // 微积分
+	wcscpy_s(stu[5].martix, L"100"); // 线性代数与空间解析几何
+	wcscpy_s(stu[5].c_c, L"100"); // 程序设计基础
 }
 
 // 老师数据初始化
@@ -175,12 +175,12 @@ void mappingTableData(int mapping[MAX_STU], int col, Table* tb, headerList* hl)
 		// 这条数据需要映射
 		else
 		{
-			wcscpy_s(stu_tl->col[0], student[i].name);
-			wcscpy_s(stu_tl->col[1], student[i].classs);
-			wcscpy_s(stu_tl->col[2], student[i].stu_id);
-			wcscpy_s(stu_tl->col[3], student[i].calculus);
-			wcscpy_s(stu_tl->col[4], student[i].martix);
-			wcscpy_s(stu_tl->col[5], student[i].c_c);
+			wcscpy_s(stu_tl->col[0], stu[i].name);
+			wcscpy_s(stu_tl->col[1], stu[i].classs);
+			wcscpy_s(stu_tl->col[2], stu[i].stu_id);
+			wcscpy_s(stu_tl->col[3], stu[i].calculus);
+			wcscpy_s(stu_tl->col[4], stu[i].martix);
+			wcscpy_s(stu_tl->col[5], stu[i].c_c);
 
 			stu_tl++;
 		}
@@ -248,7 +248,7 @@ void writeFile()
 	// 学生
 	for (int i = 0; i < stu_num; i++)
 	{
-		fwrite(&student[i], sizeof(Student), 1, fp);
+		fwrite(&stu[i], sizeof(Student), 1, fp);
 	}
 
 	// 老师
@@ -269,15 +269,15 @@ void readFile()
 		return;
 	}
 
-	fwrite(&stu_num, sizeof(int), 1, fp); // 学生总数
-	fwrite(&cur_stu_id, sizeof(int), 1, fp); // 当前学生id
-	fwrite(teacher_code, sizeof(wchar_t), wcslen(teacher_code), fp); // 老师验证码
-	fwrite(stu_code, sizeof(wchar_t), wcslen(stu_code), fp); // 学生验证码
+	fread(&stu_num, sizeof(int), 1, fp); // 学生总数
+	fread(&cur_stu_id, sizeof(int), 1, fp); // 当前学生id
+	fread(teacher_code, sizeof(wchar_t), wcslen(teacher_code), fp); // 老师验证码
+	fread(stu_code, sizeof(wchar_t), wcslen(stu_code), fp); // 学生验证码
 
 	// 学生
 	for (int i = 0; i < stu_num; i++)
 	{
-		fread(&student[i], sizeof(Student), 1, fp);
+		fread(&stu[i], sizeof(Student), 1, fp);
 	}
 
 	// 老师
