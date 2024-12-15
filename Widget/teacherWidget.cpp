@@ -5,7 +5,7 @@
 extern int navbar_posx;
 extern int navbar_posy;
 
-Navbar admin_navbar(navbar_posx, navbar_posy, NAV_WIDTH, WIN_HEIGHT);
+Navbar teacher_navbar(navbar_posx, navbar_posy, NAV_WIDTH, WIN_HEIGHT);
 
 // 搜索学生输入框
 int search_stu_input_posx = 240;
@@ -61,7 +61,7 @@ headerList stu_tb_hl[MAX_COL]; // 学生列表表头
 
 // 添加学生弹框
 int add_stu_message_width = 520;
-int add_stu_message_height = 530;
+int add_stu_message_height = 600;
 
 Message add_stu_message(WIN_WIDTH, WIN_HEIGHT, add_stu_message_width, add_stu_message_height);
 
@@ -69,24 +69,27 @@ Message add_stu_message(WIN_WIDTH, WIN_HEIGHT, add_stu_message_width, add_stu_me
 int add_stu_input_width = 200;
 int add_stu_input_height = 30;
 
-Input add_stu_sn_input(0, 0, add_stu_input_width, add_stu_input_height);
-Input* add_stu_sn_input_ptr = &add_stu_sn_input;
+Input add_stu_stu_id_input(0, 0, add_stu_input_width, add_stu_input_height);
+Input* add_stu_stu_id_input_ptr = &add_stu_stu_id_input;
 
 Input add_stu_name_input(0, 0, add_stu_input_width, add_stu_input_height);
 Input* add_stu_name_input_ptr = &add_stu_name_input;
 
-Input add_stu_author_input(0, 0, add_stu_input_width, add_stu_input_height);
-Input* add_stu_author_input_ptr = &add_stu_author_input;
+Input add_stu_class_input(0, 0, add_stu_input_width, add_stu_input_height);
+Input* add_stu_class_input_ptr = &add_stu_class_input;
 
-Input add_stu_publisher_input(0, 0, add_stu_input_width, add_stu_input_height);
-Input* add_stu_publisher_input_ptr = &add_stu_publisher_input;
+Input add_stu_calculus_input(0, 0, add_stu_input_width, add_stu_input_height);
+Input* add_stu_calculus_input_ptr = &add_stu_calculus_input;
 
-Input add_stu_publish_time_input(0, 0, add_stu_input_width, add_stu_input_height);
-Input* add_stu_publish_time_input_ptr = &add_stu_publish_time_input;
+Input add_stu_martix_input(0, 0, add_stu_input_width, add_stu_input_height);
+Input* add_stu_martix_input_ptr = &add_stu_martix_input;
+
+Input add_stu_c_c_input(0, 0, add_stu_input_width, add_stu_input_height);
+Input* add_stu_c_c_input_ptr = &add_stu_c_c_input;
 
 // 修改学生弹框
 int modify_stu_message_width = 520;
-int modify_stu_message_height = 530;
+int modify_stu_message_height = 600;
 
 Message modify_stu_message(WIN_WIDTH, WIN_HEIGHT, modify_stu_message_width, modify_stu_message_height);
 
@@ -94,20 +97,23 @@ Message modify_stu_message(WIN_WIDTH, WIN_HEIGHT, modify_stu_message_width, modi
 int modify_stu_input_width = 200;
 int modify_stu_input_height = 30;
 
-Input modify_stu_sn_input(0, 0, modify_stu_input_width, modify_stu_input_height);
-Input* modify_stu_sn_input_ptr = &modify_stu_sn_input;
+Input modify_stu_stu_id_input(0, 0, modify_stu_input_width, modify_stu_input_height);
+Input* modify_stu_stu_id_input_ptr = &modify_stu_stu_id_input;
 
 Input modify_stu_name_input(0, 0, modify_stu_input_width, modify_stu_input_height);
 Input* modify_stu_name_input_ptr = &modify_stu_name_input;
 
-Input modify_stu_author_input(0, 0, modify_stu_input_width, modify_stu_input_height);
-Input* modify_stu_author_input_ptr = &modify_stu_author_input;
+Input modify_stu_class_input(0, 0, modify_stu_input_width, modify_stu_input_height);
+Input* modify_stu_class_input_ptr = &modify_stu_class_input;
 
-Input modify_stu_publisher_input(0, 0, modify_stu_input_width, modify_stu_input_height);
-Input* modify_stu_publisher_input_ptr = &modify_stu_publisher_input;
+Input modify_stu_calculus_input(0, 0, modify_stu_input_width, modify_stu_input_height);
+Input* modify_stu_calculus_input_ptr = &modify_stu_calculus_input;
 
-Input modify_stu_publish_time_input(0, 0, modify_stu_input_width, modify_stu_input_height);
-Input* modify_stu_publish_time_input_ptr = &modify_stu_publish_time_input;
+Input modify_stu_martix_input(0, 0, modify_stu_input_width, modify_stu_input_height);
+Input* modify_stu_martix_input_ptr = &modify_stu_martix_input;
+
+Input modify_stu_c_c_input(0, 0, modify_stu_input_width, modify_stu_input_height);
+Input* modify_stu_c_c_input_ptr = &modify_stu_c_c_input;
 
 // 删除学生弹框
 int del_stu_message_width = 520;
@@ -119,7 +125,7 @@ Message del_stu_message(WIN_WIDTH, WIN_HEIGHT, del_stu_message_width, del_stu_me
 int del_stu_input_width = 150;
 int del_stu_input_height = 30;
 
-Input del_stu_sn_input(0, 0, del_stu_input_width, del_stu_input_height); // 删除学生序号输入框
-Input* del_stu_sn_input_ptr = &del_stu_sn_input; // 删除学生序号输入框指针
+Input del_stu_stu_id_input(0, 0, del_stu_input_width, del_stu_input_height); // 删除学生序号输入框
+Input* del_stu_stu_id_input_ptr = &del_stu_stu_id_input; // 删除学生序号输入框指针
 
 

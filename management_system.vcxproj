@@ -146,8 +146,8 @@
     <ClCompile Include="EUI\Toast.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Student\student.cpp" />
+    <ClCompile Include="Teacher\teacher.cpp" />
     <ClCompile Include="Widget\accountWidget.cpp" />
-    <ClCompile Include="Widget\stuWidget.cpp" />
     <ClCompile Include="Widget\teacherWidget.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -167,6 +167,7 @@
     <ClInclude Include="EUI\TextButton.h" />
     <ClInclude Include="EUI\Toast.h" />
     <ClInclude Include="Student\student.h" />
+    <ClInclude Include="Teacher\teacher.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

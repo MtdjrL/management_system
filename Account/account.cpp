@@ -237,14 +237,14 @@ void stuLoginPage()
 	stu_login_btn.bindOnClick(stuLogin);
 	stu_login_btn.show();
 
-	// 注册账号按钮
-	stu_login_register_btn.setText(L"注册账号");
-	stu_login_register_btn.setBkColor(RGB(72, 151, 146));
-	stu_login_register_btn.setBorderColor(RGB(93, 202, 195));
-	stu_login_register_btn.setHoverBkColor(RGB(44, 135, 129));
-	stu_login_register_btn.setPressedBkColor(RGB(25, 91, 87));
-	stu_login_register_btn.bindOnClick(stuRegisterPage);
-	stu_login_register_btn.show();
+	//// 注册账号按钮
+	//stu_login_register_btn.setText(L"注册账号");
+	//stu_login_register_btn.setBkColor(RGB(72, 151, 146));
+	//stu_login_register_btn.setBorderColor(RGB(93, 202, 195));
+	//stu_login_register_btn.setHoverBkColor(RGB(44, 135, 129));
+	//stu_login_register_btn.setPressedBkColor(RGB(25, 91, 87));
+	//stu_login_register_btn.bindOnClick(stuRegisterPage);
+	//stu_login_register_btn.show();
 
 	// 整个界面的事件循环监听
 	ExMessage msg; // 鼠标消息
@@ -283,11 +283,11 @@ void stuLoginPage()
 		{
 			stu_teacher_login_btn.eventLoop(); // 进入事件循环
 		}
-		// 注册按钮
-		if (stu_login_register_btn.isOn(msg.x, msg.y))
-		{
-			stu_login_register_btn.eventLoop(); // 进入事件循环
-		}
+		//// 注册按钮
+		//if (stu_login_register_btn.isOn(msg.x, msg.y))
+		//{
+		//	stu_login_register_btn.eventLoop(); // 进入事件循环
+		//}
 	}
 }
 
@@ -318,9 +318,7 @@ void teacherLogin()
 		// 校验通过
 		if (wcscmp(account, teacher.account) == 0 && wcscmp(password, teacher.password) == 0)
 		{
-			settextcolor(RGB(0, 0, 0));
-			outtextxy(100,100,L"114514");
-			//TeacherMainInterface(); // 跳转至老师主界面
+			TeacherMainInterface(); // 跳转至老师主界面
 		}
 		// 校验未通过
 		else
@@ -384,7 +382,7 @@ void stuLogin()
 }
 
 // 学生注册页
-void stuRegisterPage()
+/*void stuRegisterPage()
 {
 	stu_login_listen = 0; // 关闭学生登录页面监听
 
@@ -463,8 +461,8 @@ void stuRegisterPage()
 			}
 		}
 	}
-}
-
+}*/
+/*
 // 学生注册
 void stuRegister()
 {
@@ -515,7 +513,7 @@ void stuRegister()
 	// 输入合法，注册账号
 	if (valid)
 	{
-		stu[stu_num].id = ++cur_stu_id;
+		stu[stu_num].id = cur_stu_id++;
 		wcscpy_s(stu[stu_num].account, account);
 		wcscpy_s(stu[stu_num].password, password);
 		stu_num++;
@@ -527,7 +525,7 @@ void stuRegister()
 
 		stuLoginPage(); // 跳转至学生登录页
 	}
-}
+}*/
 
 // 老师安全验证页
 void teacherVerifyPage()

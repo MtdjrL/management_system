@@ -4,7 +4,7 @@
 #include "Common/common.h"
 #include "Common/font.h"
 #include "Common/icon.h"
-//#include "Teacher/teacher.h"
+#include "Teacher/teacher.h"
 #include "Student/student.h"
 
 void initInterface(); // 界面初始化
@@ -19,9 +19,9 @@ void teacherLogin(); // 老师登录
 
 void stuLogin(); // 学生登录
 
-void stuRegisterPage(); // 学生注册页
+//void stuRegisterPage(); // 学生注册页
 
-void stuRegister(); // 学生注册
+//void stuRegister(); // 学生注册
 
 void teacherVerifyPage(); // 老师安全验证页
 

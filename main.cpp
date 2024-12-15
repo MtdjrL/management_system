@@ -13,6 +13,8 @@ int main()
 	initData(); // 初始化数据
 	readFile(); // 读入数据
 
+	//stuMainInterface();
+
 	login(); // 登录
 
 	_getch();				// 按任意键继续

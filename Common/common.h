@@ -23,7 +23,7 @@ typedef struct student {
 	wchar_t stu_id[TEXT_LEN]; // 学号
 	wchar_t calculus[TEXT_LEN]; // 微积分
 	wchar_t martix[TEXT_LEN]; // 线性代数
-	wchar_t c_c[TEXT_LEN]; // 程序设计基础
+	wchar_t c_c[TEXT_LEN]; // 程序设计
 }Student;
 
 // 老师

@@ -84,11 +84,11 @@
     <ClCompile Include="Widget\accountWidget.cpp">
       <Filter>Widget</Filter>
     </ClCompile>
-    <ClCompile Include="Widget\stuWidget.cpp">
-      <Filter>Widget</Filter>
-    </ClCompile>
     <ClCompile Include="Widget\teacherWidget.cpp">
       <Filter>Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Teacher\teacher.cpp">
+      <Filter>Teacher</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -139,6 +139,9 @@
     </ClInclude>
     <ClInclude Include="Account\account.h">
       <Filter>Account</Filter>
+    </ClInclude>
+    <ClInclude Include="Teacher\teacher.h">
+      <Filter>Teacher</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
