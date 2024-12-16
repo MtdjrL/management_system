@@ -397,6 +397,7 @@ void addStu()
 		toast.setText(L"学号不是13位，请重新输入");
 		toast.show(WARNING);
 		search_btn.show(); // 弱提示框会擦除掉覆盖的搜索按钮，因此需要重新显示
+		return;
 	}
 
 	// 学号和班级匹配
@@ -408,6 +409,7 @@ void addStu()
 		toast.setText(L"学号与班级不匹配，请重新输入");
 		toast.show(WARNING);
 		search_btn.show(); // 弱提示框会擦除掉覆盖的搜索按钮，因此需要重新显示
+		return;
 	}
 
 	// 学号查重
@@ -485,6 +487,8 @@ void modifyStu()
 		toast.setText(L"学号不是13位，请重新输入");
 		toast.show(WARNING);
 		search_btn.show(); // 弱提示框会擦除掉覆盖的搜索按钮，因此需要重新显示
+
+		return;
 	}
 
 	// 学号和班级匹配
@@ -496,6 +500,8 @@ void modifyStu()
 		toast.setText(L"学号与班级不匹配，请重新输入");
 		toast.show(WARNING);
 		search_btn.show(); // 弱提示框会擦除掉覆盖的搜索按钮，因此需要重新显示
+
+		return;
 	}
 
 	int index = -1; // 需要修改的学生索引
