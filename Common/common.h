@@ -51,9 +51,9 @@ void refresh(enum RefreshArea area); // 屏幕刷新
 
 void initData(); // 数据初始化
 
-void initStuData(); // 图书数据初始化
+void initStuData(); // 学生数据初始化
 
-void initTeacherData(); // 管理员数据初始化
+void initTeacherData(); // 教师数据初始化
 
 
 void initCode(); // 验证码初始化

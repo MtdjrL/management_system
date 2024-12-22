@@ -73,7 +73,7 @@ void refresh(enum RefreshArea area)
 // 数据初始化
 void initData()
 {
-	initStuData(); // 学生数据初始化
+	//initStuData(); // 学生数据初始化
 	initTeacherData(); // 老师数据初始化
 	initCode(); // 验证码初始化
 }

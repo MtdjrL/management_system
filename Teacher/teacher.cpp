@@ -136,8 +136,8 @@ void homepage()
 	endx = startx + width;
 	fillroundrect(startx, starty, endx, endy, radius, radius);
 
-	loadimage(&stu_num_icon, L"./pic/stu_num.png");
-	transparentimage(NULL, startx + icon_left_margin, starty + icon_top_margin, &stu_num_icon);
+	//loadimage(&stu_num_icon, L"./pic/stu_num.png");
+	//transparentimage(NULL, startx + icon_left_margin, starty + icon_top_margin, &stu_num_icon);
 
 	title_posx = startx + title_left_margin;
 	title_posy = starty + title_top_margin;

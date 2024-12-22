@@ -1,6 +1,6 @@
 #include "EUI/EUI.h" // 引入EUI组件库
-#include "Student/student.h"
 #include "Account/account.h"
+#include "Student/student.h"
 
 
 int main()
@@ -14,7 +14,6 @@ int main()
 	readFile(); // 读入数据
 
 	//stuMainInterface();
-
 	login(); // 登录
 
 	_getch();				// 按任意键继续
